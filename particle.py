@@ -12,5 +12,7 @@ class Particle:
         self.pos = Position   # Sets x position
         self.m = M  # Sets mass
         # Initial velocity and acceleration set to be zero
-        self.vel = np.zeros((2,1))
-        self.acc = np.zeros((2,1))
+        self.vel = np.zeros((2,))
+        self.acc = np.zeros((2,))
+    def get_vel(self):
+        return self.vel
